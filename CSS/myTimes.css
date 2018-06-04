@@ -1,5 +1,5 @@
 .logo {
-	background-image: url("resources/images/img-myt-logo.jpg");
-	height: auto;
-	width: auto; 
+	background-image: url("./resources/images/img-myt-logo.jpg");
+	height: 70px;
+	width: 60px; 
 }
