@@ -1,10 +1,11 @@
 .header {
 	display: inline-block; 
-	flex-flow: row no-wrap; 
+	flex-flow: row nowrap; 
 	height: 100px; 
 	width: 100%; 
 	justify-content: center;
-	align-items: center; 
+	align-items: center;
+	margin: 0px 20px;
 	/**background-color: blue; **/
 
 }
@@ -13,10 +14,10 @@
 
 .header_left {
 	display: flex; 
-	flex-flow: row nowrap; 
+	flex-flow: row wrap-reverse; 
 	height: inherit; 
-	width: 200px; 
-	justify-content: center;
+	width: auto; 
+	justify-content: flex-start;
 	align-items: center; 
 	float: left; 
 	/**background-color: green; **/
@@ -33,23 +34,23 @@ p {
 
 .header_right {
 	height: inherit; 
-	width: auto; 
+	width: 300px; 
 	float: right; 
 	display: inline-block; 
 	flex-flow: row nowrap;
 	justify-content: flex-end; 
-	/** background-color: aquamarine; **/
+	margin-right: 50px;
+	/** background-color: aquamarine; **/ 
 }
-.nav { 
-	width: 300px; 
+.nav {  
 	height: inherit;
+	width: inherit;
 	font-weight: bold; 
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-family: Verdana; 
 	display: flex; 
-	flex-flow: row wrap-reverse;
+	flex-flow: row nowrap;
 	align-items: center; 
-	justify-content: space-between;
-	margin: 5px 20px; 
+	justify-content: space-evenly;
 }
 li {
 	color: black; 
