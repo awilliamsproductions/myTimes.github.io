@@ -1,8 +1,8 @@
-/** Global **/ 
-
+/** Global 
 div {
-	border: 1px solid black; 
+	border: 1px solid black;  
 } 
+ **/ 
 
 /** Header **/ 
 
@@ -12,7 +12,7 @@ div {
 	height: 100px; 
 	width: 100%; 
 	align-items: center; 
-	align-content: center; 
+	align-content: center;
 	/** background-color: blue; **/
 }
 
@@ -64,22 +64,25 @@ div {
 
 /** Main Body **/ 
 
-.main.container {
+.main_container {
 	display: flex;
-	flex-flow: column wrap; 
-	width: 100%; 
+	flex-flow: row wrap; 
+	width: 80%;
+	justify-content: flex-start; 
+	align-content: center; 
+	align-items: center;
 }
 
 /** Large Containers **/ 
 
-.column.large {
+.column_large {
 	width: 630px;
 	height: auto; 
-	margin-top: 20px; 
 	display: flex;
 	flex-flow: column wrap; 
+	margin-top: 30px;
 }
-.column.large p { 
+.column_large p { 
 	font-family: Verdana;
     font-size: 14px;
   	font-weight: bold;
@@ -88,25 +91,24 @@ div {
 
 /** Medium Containers **/
 
-column.medium {
+.column_medium {
 	width: 300px;
 	height: auto; 
 	margin-left: 20px; 
 	margin-right: 20px; 
 	margin-top: 30px;
 	display: flex; 
-	flex-flow: column wrap; 
+	flex-flow: column nowrap; 
+	/** background-color: yellowgreen; **/
 }
 
 /** Small Containers **/ 
 
-column.small {
+.column_small {
 	width: 240px; 
-	height: auto;
-	margin-left: 20px; 
-	margin-right: 20px; 
+	height: auto; 
 	margin-top: 30px;
 	display: flex; 
 	flex-flow: column wrap; 
-	background-color: aqua; 
+	/** background-color: aqua; **/ 
 }
