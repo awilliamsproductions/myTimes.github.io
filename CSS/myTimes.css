@@ -1,21 +1,28 @@
+/** Global **/ 
+
+div {
+	border: 1px solid black; 
+} 
+
+/** Header **/ 
+
 .header {
 	display: flex; 
 	flex-flow: row nowrap; 
 	height: 100px; 
 	width: 100%; 
-	 /** align-items: center;
-	align-content: center; **/
+	align-items: center; 
+	align-content: center; 
 	/** background-color: blue; **/
-
 }
 
 /** Left Side of Header; Logo **/ 
 
 .header_left {
 	display: flex; 
-	flex-flow: row wrap; 
-	height: 80px; 
-	width: 60%; 
+	flex-flow: row nowrap; 
+	height:70px; 
+	width: 70%; 
 	justify-content: flex-start;
 	align-items: center; 
 	align-content: center; 
@@ -23,50 +30,13 @@
 	padding-left: 40px;
 	/** background-color: green; **/
 }
-p {
+.header p {
 	margin: 0px 20px; 
 	color: mediumaquamarine; 
 	font-family: Verdana;
     font-size: 14px;
   	font-weight: bold;
 }
-
-/** Right Side of Header; Navigation **/ 
-
-.header_right {
-	height: inherit; 
-	width: auto; 
-	display: flex; 
-	flex-direction: column;
-	justify-content: flex-end;
-	margin: 0px 40px; 
-	
-	/** background-color: aquamarine; **/ 
-}
-.nav {  
-	height: inherit;
-	width: 300px;
-	font-weight: bold; 
-	font-family: Verdana; 
-	display: flex; 
-	flex-flow: row nowrap;
-	align-items: center;  
-	justify-content: space-around;
-	background-color: blue; 
-	float: right;
-}
-.nav li {
-	color: black; 
-	font-weight: bold;
-	text-decoration: underline; 
-	list-style-type: none; 
-}
-main_container {
-	display: flex; 
-}
-
-/**
-
 .logo {
 	background-image: url("../resources/images/img-myt-logo.jpg");
 	height: 60px;
@@ -75,8 +45,68 @@ main_container {
 	margin-right: 20px; 
 } 
 
-**/
+/** Right Side of Header; Navigation **/ 
 
-div {
-	border: 1px solid black; 
+ li {
+	height: inherit;
+	width: auto;
+	color: black;
+	font-weight: bold;
+	text-decoration: underline; 
+	list-style-type: none; 
+	font-family: Verdana; 
+	display: flex;
+	align-items: center; 
+	justify-content: space-between;  
+	float: right;
+	padding: 0px 25px; 
+}
+
+/** Main Body **/ 
+
+.main.container {
+	display: flex;
+	flex-flow: column wrap; 
+	width: 100%; 
+}
+
+/** Large Containers **/ 
+
+.column.large {
+	width: 630px;
+	height: auto; 
+	margin-top: 20px; 
+	display: flex;
+	flex-flow: column wrap; 
+}
+.column.large p { 
+	font-family: Verdana;
+    font-size: 14px;
+  	font-weight: bold;
+	height: auto;
+}
+
+/** Medium Containers **/
+
+column.medium {
+	width: 300px;
+	height: auto; 
+	margin-left: 20px; 
+	margin-right: 20px; 
+	margin-top: 30px;
+	display: flex; 
+	flex-flow: column wrap; 
+}
+
+/** Small Containers **/ 
+
+column.small {
+	width: 240px; 
+	height: auto;
+	margin-left: 20px; 
+	margin-right: 20px; 
+	margin-top: 30px;
+	display: flex; 
+	flex-flow: column wrap; 
+	background-color: aqua; 
 }
