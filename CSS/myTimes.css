@@ -1,8 +1,10 @@
-/** Global 
+/** Global  
+
 div {
 	border: 1px solid black;  
 } 
- **/ 
+
+**/
 
 /** Header **/ 
 
@@ -68,16 +70,17 @@ div {
 	display: flex;
 	flex-flow: row wrap; 
 	width: 80%;
+	min-height: 600px;
 	justify-content: flex-start; 
 	align-content: center; 
-	align-items: center;
+	align-items: stretch;
+	margin: 0px 10%; 
 }
 
 /** Large Containers **/ 
 
 .column_large {
-	width: 630px;
-	height: auto; 
+	width: 630px; 
 	display: flex;
 	flex-flow: column wrap; 
 	margin-top: 30px;
@@ -88,12 +91,49 @@ div {
   	font-weight: bold;
 	height: auto;
 }
-
+.column_large h2 {
+	font-family: Verdana; 
+	font-size: 45px; 
+	font-weight: bold; 
+	color: white; 
+}
+.image_drink {
+	background-image: url("../resources/images/img-story-main.png");
+	background-size: auto; 
+	background-postion: center;  
+	height: 300px;
+	display: flex; 
+	flex-flow: column wrap; 
+	justify-content: center; 
+	align-items: center;
+	align-content: center;
+}
+.image_child {
+	background-image: url("../resources/images/img-story-2.png");
+	background-size: auto; 
+	background-position: center; 
+	height: 300px; 
+	display: flex; 
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.image_camera {
+	background-image: url("../resources/images/img-story-3.png");
+	background-size: auto;
+	background-position: center; 
+	height: 300px; 
+	display: flex; 
+	flex-flow: column wrap;
+	justify-content: center; 
+	align-items: center; 
+	align-content: center;
+}
 /** Medium Containers **/
 
 .column_medium {
-	width: 300px;
-	height: auto; 
+	width: 300px; 
 	margin-left: 20px; 
 	margin-right: 20px; 
 	margin-top: 30px;
@@ -101,12 +141,22 @@ div {
 	flex-flow: column nowrap; 
 	/** background-color: yellowgreen; **/
 }
-
+.image_cat {
+	background-image: url("../resources/images/img-story-1.png"); 
+	background-size: auto; 
+	background-position: center; 
+	height: 200px; 
+}
+.column_medium h2 {
+	font-family: Verdana; 
+	font-size: 20px; 
+	font-weight: bold; 
+	color: white;
+}
 /** Small Containers **/ 
 
 .column_small {
 	width: 240px; 
-	height: auto; 
 	margin-top: 30px;
 	display: flex; 
 	flex-flow: column wrap; 
