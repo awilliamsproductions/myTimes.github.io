@@ -131,6 +131,28 @@ h3 {
 	align-items: center; 
 	align-content: center;
 }
+.small_stories {
+	height: auto; 
+	display: flex;
+	flex-flow: row nowrap; 
+	width: inherit;
+	justify-content: space-between;
+	align-content: space-between; 
+}
+.small_stories_left {
+	height: auto; 
+	display: flex;
+	flex-flow:column wrap; 
+	justify-content: space-between;
+	width: 50%;
+}
+.small_stories_right {
+	height: auto; 
+	display: flex;
+	flex-flow: column wrap; 
+	justify-content: space-between;
+	width: 50%;
+}
 /** Medium Containers **/
 
 .column_medium {
