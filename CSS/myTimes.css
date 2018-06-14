@@ -1,9 +1,14 @@
-/** Global 
+/** Global **/
 
 div {
 	border: 1px solid black;  
 } 
-**/
+
+body {
+	display: flex; 
+	flex-flow: column nowrap;
+	align-items: center; 
+}
 
 /** Header **/ 
 
@@ -70,7 +75,7 @@ div {
 	flex-flow: row wrap; 
 	width: 80%;
 	min-height: 600px;
-	justify-content: flex-start; 
+	justify-content: center; 
 	align-content: center;
 	align-items: stretch;
 	margin: 0px 10%;
@@ -240,6 +245,7 @@ h3 {
 	font-family: verdana;
 	font-size: 12px;
 	padding: 50px;
+	bottom: 0;
 }
 .footer_left {
 	display: flex; 

@@ -1,0 +1,79 @@
+.header {
+	display: inline-block; 
+	flex-flow: row nowrap; 
+	height: 100px; 
+	width: 100%; 
+	align-items: center;
+	align-content: center; 
+	/** background-color: blue; **/
+
+}
+
+/** Left Side of Header; Logo **/ 
+
+.header_left {
+	display: flex; 
+	flex-flow: row wrap-reverse; 
+	height: inherit; 
+	width: 60%; 
+	justify-content: flex-start;
+	align-items: center; 
+	float: left; 
+	/** background-color: green; **/
+	margin: 0px 40px;
+}
+p {
+	margin: 0px 20px; 
+	color: mediumaquamarine; 
+	font-family: Verdana;
+    font-size: 14px;
+  	font-weight: bold;
+}
+
+/** Right Side of Header; Navigation **/ 
+
+.header_right {
+	height: inherit; 
+	width: auto; 
+	display: flex; 
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	margin: 0px 40px; 
+	
+	/** background-color: aquamarine; **/ 
+}
+.nav {  
+	height: inherit;
+	width: 25%;
+	font-weight: bold; 
+	font-family: Verdana; 
+	display: flex; 
+	flex-flow: row nowrap;
+	align-items: center;  
+	justify-content: space-around;
+	float: right;
+	padding: 0px 10px;
+}
+.nav li {
+	color: black; 
+	font-weight: bold;
+	text-decoration: underline; 
+	list-style-type: none; 
+	width: 50px; 
+}
+
+/**
+
+.logo {
+	background-image: url("../resources/images/img-myt-logo.jpg");
+	height: 60px;
+	width: 70px;
+	float: left; 
+	margin-right: 20px; 
+} 
+
+div {
+	border: 1px solid black; 
+}
+
+**/
