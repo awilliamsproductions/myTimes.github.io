@@ -1,8 +1,10 @@
-/** Global **/
+/** Global 
 
 div {
 	border: 1px solid black;  
 } 
+
+**/
 
 body {
 	display: flex; 
